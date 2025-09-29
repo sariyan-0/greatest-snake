@@ -18,11 +18,14 @@ lst = [ 18, 16, 20]
 
 t = len(lst) # numbers of items in a list
 print(t)
-#
+#-----------------
 first_element = lst[0] # index (the 1st is always 0)
 print(first_element)
 #----------------------------------------------------
 # 4: Boolean
+a = 85
+if a > 80:
+    print("HELLL YAHHH")
 # ----------------------
 # 5: Tuple
 # 6: Dictionery
