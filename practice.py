@@ -1,5 +1,5 @@
 ############################# PRACTICE #############################
-# Q1: Prameter of rectangle
+# Q1: perimeter of rectangle
 # a = 10
 # b = 20
 # #
@@ -7,7 +7,7 @@
 # d = c * 2
 # print (d)
 # --------------------------------
-# Q2: Prameter of circle
+# Q2: perimeter of circle
 # r = 5
 # PI = 3.14
 # #
@@ -74,5 +74,4 @@
 # if (a // 2) * 2 == a:   # This is gonna remove the decimal number so that the answer is accurate. Thats why we use "//"  instead of "/" 
 #     print("Even")
 # else:
-#     print("Odd") 
-
+#     print("Odd")
