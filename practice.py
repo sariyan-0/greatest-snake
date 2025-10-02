@@ -46,22 +46,26 @@
 # print ("Speed:", s ,"M/S") # We use commas to seperate different values in a print statement
 # --------------------------------
 # Q4: Add limits (Done)
-# a = -1
-# if a > 80:
-#     print("HELLL YAHHH")    # Indentation
-#     print("Good Job")
-#     print("You are amazing!")
-# elif a > 70:
-#     print("Woow")
+a = -1
+if a > 100:
+    print("Invalid Score, the mark is more than 100%!")
 
-# elif a > 50:
-#     print("Try harder next time")
+elif a > 80:
+    print("HELLL YAHHH")    # Indentation
+    print("Good Job")
+    print("You are amazing!")
+elif a > 70:
+    print("Woow")
 
-# elif a > -1:
-#       print("You have to study all summer")
+elif a > 50:
+    print("Try harder next time")
 
-# else:
-#   print("Invalid Score, you entered a negative mark")
+elif a > -1:
+      print("You have to study all summer")
+elif a > 100:
+    print("Invalid Score, the mark is more than")
+else:
+  print("Invalid Score, you entered a negative mark!")
 # --------------------------------
 # Q5: Detect odd or even numbers (Done)
 
