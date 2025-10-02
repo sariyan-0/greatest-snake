@@ -79,3 +79,11 @@
 #     print(a, "is even")
 # else:
 #     print(a, "is odd")
+#
+# ----- OR -----
+# x = 67
+# if x % 2 == 0:
+#     print("Even Number")
+
+# else:
+#     print("Odd Number")
