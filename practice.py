@@ -87,3 +87,19 @@
 
 # else:
 #     print("Odd Number")
+# -------------------------------------------------------
+# Q6: Which one is bigger?
+# a = 50
+# b = 50
+# c = 50
+# if a > b and a > c:
+#     print(a, "is bigger")
+
+# elif b > a and b > c:
+#     print(b,"is bigger")
+
+# elif c > a and c > b:
+#     print(c,"is bigger")
+    
+# else:
+#     print("they are all the same:", a)
