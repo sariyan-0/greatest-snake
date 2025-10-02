@@ -74,5 +74,5 @@
 # if (a // 2) * 2 == a:   # This is gonna remove the decimal number so that the answer is accurate. Thats why we use "//"  instead of "/" 
 #     print("Even")
 # else:
-#     print("Odd")
+#     print("Odd") 
 
