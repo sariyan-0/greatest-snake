@@ -103,3 +103,40 @@
     
 # else:
 #     print("they are all the same:", a)
+# -------------------------------------------------------
+# Q7: apply a 20% discount to the prices
+# price = [20, 40, 30, 100]
+# for discount in price:
+#     final_price = discount - (discount * 0.2) # Applies the discount
+#     print(final_price)
+# -------------------------------------------------------
+# Q8: Find the odd numbers in the list
+# list = [13, 12, 5, 1]
+# for odd in list:
+#     if ( odd // 2) * 2 == odd:   # This is gonna remove the decimal number so that the answer is accurate. Thats why we use "//"  instead of "/" 
+#         print(odd, "even")
+#     else:
+#         print(odd,"odd")
+# Q9: Find the odd numbers in the list
+# -------------------------------------------------------
+# Q10: Find the divisors of the number 12 (Not Done)
+# # -------------------------------------------------------
+# Q11: Find the smallest number in the list
+# lst = [12, 18, 7, 65, 25, 3, 15, 90]
+
+# smallest = lst[0]
+# for num in lst:
+#     if num < smallest:
+#         smallest = num
+
+# print(smallest)
+# -------------------------------------------------------
+# Q12: add a 20% discount for the prices above 10000 tomans
+# lst = [10000, 50000, 8000, 90000, 2000, 65000, 40000]
+
+# for price in lst:
+#     if price > 10000:
+#         final_price = price - (price * 0.2)  # Applies 20% discount if above 10000 toman
+#         print(final_price)
+#     else:
+#         print(price, "(not discounted!)")  # No discount applied
