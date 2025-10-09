@@ -183,8 +183,14 @@
 #         print(price, "(not discounted!)")  # No discount applied
 # -------------------------------------------------------
 # Q13: Using Range
+# x = 1200
+# for item in range(1,x+1): # By using +1 you also include the number itself
+#     if x % item == 0:
+#         print(item)
+# -------------------------------------------------------
+# Q14: Find the two digit divisors of x
 x = 1200
 for item in range(1,x+1): # By using +1 you also include the number itself
     if x % item == 0:
-        print(item)
-# -------------------------------------------------------
+        if 9 < item <100: # Limits to only two digit numbers
+            print(item)
