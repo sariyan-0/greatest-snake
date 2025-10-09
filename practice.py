@@ -163,12 +163,14 @@
 #         print(item)
 # -------------------------------------------------------
 # Q11: Find the smallest number in the list
-# lst = [12, 18, 7, 65, 25, 3, 15, 90]
-
+# lst = [12, 18, 3, 65, 25, 7, 15, 90]
 # smallest = lst[0]
-# for num in lst:
-#     if num < smallest:
-#         smallest = num
+# for item in lst: # Tries each number in the list
+    
+#     # If the current number is smaller than the current smallest
+#     if item < smallest:  # Update 'smallest' to this new minimum value
+#         smallest = item  # Print the new smallest value found
+# print(smallest)
 
 # print(smallest)
 # -------------------------------------------------------
@@ -189,8 +191,45 @@
 #         print(item)
 # -------------------------------------------------------
 # Q14: Find the two digit divisors of x
-x = 1200
-for item in range(1,x+1): # By using +1 you also include the number itself
-    if x % item == 0:
-        if 9 < item <100: # Limits to only two digit numbers
-            print(item)
+# x = 1200
+# for item in range(1,x+1): # By using +1 you also include the number itself
+#     if x % item == 0:
+#         if 9 < item <100: # Limits to only two digit numbers
+#             print(item)
+#
+# We can also put the limit on range
+# x = 1200
+# for item in range(10, 100): # Limits to only two digit numbers
+#     if x % item == 0:
+#         print(item)
+# -------------------------------------------------------
+# Q15: Print the maximum in the list
+# lst = [12, 18, 3, 65, 25, 7, 15, 90]
+# largest = lst[0]
+# for item in lst:
+#     if item > largest: 
+#         largest = item # Moves to the next number to compare with
+# print(largest)  # Prints 90
+# -------------------------------------------------------
+# Q16: print the biggest off number in the list
+# lst = [12, 18, 3, 65, 25, 7, 15, 90]
+# largest = lst[0]
+# for item in lst:
+#     if item > largest and item % 2 == 1:
+#         largest = item # Moves to the next number to compare with
+# print(largest)  # Prints the biggest odd
+# -------------------------------------------------------
+# Q17: Find the average of the smallest and and biggest numbers in the list
+lst = [12, 18, 7, 65, 35, 3, 15, 90]
+# -------------------------------------------------------
+# Q17: Find the total number of all the items in the list
+lst = [12, 18, 7, 65, 35, 3, 15, 90]
+# -------------------------------------------------------
+# Q18: Find the average of all the numbers in the list
+lst = [12, 18, 7, 65, 35, 3, 15, 90]
+# -------------------------------------------------------
+# Q19: Detect prime numbers
+# 12 >>>> 1, 2, 3, 4, 6, 12
+# 19 >>>> 1, 19
+#
+x = 1399
