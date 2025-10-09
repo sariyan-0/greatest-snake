@@ -12,5 +12,8 @@ for number in list: # "100" X wrong!
     z = number + 100 # Each are embedded one by one 
     print(z)
 
-#
-
+# Using Range
+x = 1200
+for item in range(1,x+1): # By using +1 you also include the number itself
+    if x % item == 0:
+        print(item)

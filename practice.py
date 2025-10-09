@@ -120,7 +120,48 @@
 # Q9: Find the odd numbers in the list
 # -------------------------------------------------------
 # Q10: Find the divisors of the number 12 (Not Done)
-# # -------------------------------------------------------
+# x = 12
+# if x % 1 == 0:
+#     print(1)
+
+# if x % 2 == 0:
+#     print(2)
+
+# if x % 3 == 0:
+#     print(3)
+
+# if x % 4 == 0:
+#     print(4)
+
+# if x % 5 == 0:
+#     print(5)
+
+# if x % 6 == 0:
+#     print(6)
+
+# if x % 7 == 0:
+#     print(7)
+
+# if x % 8 == 0:
+#     print(8)
+
+# if x % 9 == 0:
+#     print(9)
+
+# if x % 10 == 0:
+#     print(10)
+
+# if x % 11 == 0:
+#     print(11)
+
+# if x % 12 == 0:
+#     print(12)
+# --------------------------- Same thing, but with loop
+# x = 12
+# for item in {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12}:
+#     if x % item == 0:
+#         print(item)
+# -------------------------------------------------------
 # Q11: Find the smallest number in the list
 # lst = [12, 18, 7, 65, 25, 3, 15, 90]
 
@@ -140,3 +181,10 @@
 #         print(final_price)
 #     else:
 #         print(price, "(not discounted!)")  # No discount applied
+# -------------------------------------------------------
+# Q13: Using Range
+x = 1200
+for item in range(1,x+1): # By using +1 you also include the number itself
+    if x % item == 0:
+        print(item)
+# -------------------------------------------------------
