@@ -211,7 +211,7 @@
 #         largest = item # Moves to the next number to compare with
 # print(largest)  # Prints 90
 # -------------------------------------------------------
-# Q16: print the biggest off number in the list
+# Q16: print the biggest odd number in the list
 # lst = [12, 18, 3, 65, 25, 7, 15, 90]
 # largest = lst[0]
 # for item in lst:
@@ -220,16 +220,90 @@
 # print(largest)  # Prints the biggest odd
 # -------------------------------------------------------
 # Q17: Find the average of the smallest and and biggest numbers in the list
-lst = [12, 18, 7, 65, 35, 3, 15, 90]
+# lst = [12, 18, 7, 65, 35, 3, 15, 90]
+# largest = lst[0]
+# for item in lst:
+#     if item > largest:
+#         largest = item
+# smallest = lst[0]
+# for item2 in lst:
+#     if item2 < smallest:
+#         smallest = item2
+
+# average = (largest + smallest)/2
+# print (average)
+
 # -------------------------------------------------------
-# Q17: Find the total number of all the items in the list
-lst = [12, 18, 7, 65, 35, 3, 15, 90]
+# Q17: Find the sum of all the items in the list
+# lst = [12, 18, 7, 65, 35, 3, 15, 90]
+# g = 0
+# for item in lst:
+#     g = g + item
+# print (g)
+# OR
+# a = sum(lst)
+# print (a)
 # -------------------------------------------------------
 # Q18: Find the average of all the numbers in the list
-lst = [12, 18, 7, 65, 35, 3, 15, 90]
+# lst = [12, 18, 7, 65, 35, 3, 15, 90]
+# g = 0
+# for item in lst:
+#     g = g + item
+
+# n = len(lst)
+# average = g / n
+# print(average)
+
 # -------------------------------------------------------
-# Q19: Detect prime numbers
-# 12 >>>> 1, 2, 3, 4, 6, 12
-# 19 >>>> 1, 19
-#
-x = 1399
+# Q19: Find the divisors of x
+# x = 6
+# c = 0
+# for item in range (1, x+1):
+#     if x % item == 0:
+#         c = c + 1
+# if c == 2:
+#     print("This is a prime number")
+# else:
+#     print("This is not a prime number")
+# -------------------------------------------------------
+# Q20: Find out if x is a perfect number
+#  x = 6
+# total = 0
+# for item in range (1, x):
+#     if x % item == 0:
+#         total = total + item
+# if total == x:
+#     print("This is a perfect number")
+# else:
+#     print("This is not a perfect number")
+# -------------------------------------------------------
+# Q21: Organize the following list
+# lst = [12, 18, 7, 65, 35, 3, 15, 90]
+# lst2 = []
+# t = len(lst)
+
+# for i in range (t):
+#     mini = lst[0]
+#     for item in lst:
+#         if item < mini:
+#             mini = item
+#     lst2.append (mini) # Adds mini to lst2
+#     lst.remove (mini) # Removes mini from lst
+
+# print (lst2)
+# -------------------------------------------------------
+# Q22: Find all the prime numbers under 1000
+# Ex: 2, 3, 5, 7, 11, 13, ...., 997
+# -------------------------------------------------------
+# Q23: Sort the list from largest to smallest
+# lst = [12, 18, 7, 65, 35, 3, 15, 90]
+# -------------------------------------------------------
+# Q24: Find the common numbers in both lists
+# lst_1 = [12, 18, 7, 65, 35, 3, 15, 90]
+# lst_2 = [90, 13, 12, 15, 16, 8, 2, 11]
+# Ex: 12, 15, 90
+# -------------------------------------------------------
+# Q25: Find the smallest number in the first half from the list
+# lst = [12, 18, 7, 65, 35, 3, 15, 90]
+#       \_____________/
+# 7
