@@ -320,24 +320,135 @@
 # print(lst2)
 # -------------------------------------------------------
 # Q24: Find the common numbers in both lists
-lst_1 = [12, 18, 7, 65, 35, 3, 15, 90]
-lst_2 = [90, 13, 12, 15, 16, 8, 2, 11]
-# Ex: 12, 15, 90
+# lst_1 = [12, 18, 7, 65, 35, 3, 15, 90]
+# lst_2 = [90, 13, 12, 15, 16, 8, 2, 11]
+# # Ex: 12, 15, 90
 
-common = []
-for item in lst_1:
-    if item in lst_2:
-        common.append(item)
-print(common)
+# common = []
+# for item in lst_1:
+#     if item in lst_2:
+#         common.append(item)
+# print(common)
 # -------------------------------------------------------
+# Q25: Find the smallest number in the first half from the list
 # lst = [12, 18, 7, 65, 35, 3, 15, 90]
 
 # half = len(lst) // 2
-# mini = lst[0]
+# lst_1 = []
 
 # for i in range(half):
-#     if lst[i] < mini:
-#         mini = lst[i]
+#     num = lst[i]
+#     lst_1.append(num)
+
+# mini = lst_1[0]
+# for item in lst_1:
+#     if item < mini:
+#         mini = item
 
 # print(mini)
 # -------------------------------------------------------
+# Q26: Find the average in the second half from the lst
+# lst = [12, 18, 7, 65, 35, 5, 15, 90]
+
+# lst_2 = []
+# t = len(lst)
+# half = len(lst) // 2
+# for i in range(half, t):
+#     num = lst[i]
+#     lst_2.append(num)
+
+# t_2= len(lst_2)
+# total = 0
+# for item in lst_2:
+#     total = total + item
+
+# average = total / t_2
+# print(average)
+# ---------------------------
+# t = len(lst)
+# total = 0
+# c = 0
+# t = len(lst)
+# half = t // 2
+
+# for i in range (half, t):
+#     num = lst[i]
+#     total = total + num
+#     c = c + 1
+    
+# average = total / c
+# print(average)
+# -------------------------------------------------------
+# Q27: Find all 3 digit prime numbers
+
+# prime_lst = []
+# for x in range(100, 1000):
+#     c = 0
+#     for i in range(1, x + 1):
+#         if x % i == 0:
+#             c = c + 1
+#     if c == 2:
+#         prime_lst.append(x)
+
+# t = len(prime_lst)
+# total = 0
+# for item in prime_lst:
+#     total = total + item
+
+# average = total / t
+# print(average)
+# -------------------------------------------------------
+# Q28: Orgenize the 1st half of the list and add it with the 2nd list
+# lst = [12, 18, 7, 65, 35, 5, 15, 90]
+# lst2 = []
+# lst1 = []
+# t = len(lst)
+# half = t //2
+# for i in range(half):
+#     num = lst[i]
+#     lst1.append(num)
+
+# for i in range (half,t):
+#     num = lst[i]
+#     lst2.append(num)
+
+# lst_sorted = []
+# t = len (lst1)
+# for i in range(t):
+#     mini = lst1[0]
+#     for item in lst1:
+#         if item < mini:
+#             mini = item
+#     lst_sorted.append(mini)
+#     lst1.remove(mini)
+
+# result = lst_sorted + lst2
+
+# print(result)
+# -------------------------------------------------------
+# Q29: Find all the prime numbers under 1000
+
+# for x in range(1, 10000):
+#     total = 0
+
+#     for item in range (1, x):
+#         if x % item == 0:
+#             total = total + item
+#     if total == x:
+#         print(x)
+# -------------------------------------------------------
+# Q30: Find the smallest common number
+lst = [12, 18, 7, 65, 35, 5, 15, 90]
+lst_2 = [90, 13, 12, 15, 16, 8, 2, 11]
+# -------------------------------------------------------
+# Q31: Find if x is in the list or not?
+lst = [12, 18, 7, 65, 35, 5, 15, 90]
+# Yes/No
+# -------------------------------------------------------
+# Q32: Find the repeated numbers in the list
+lst = [12, 18, 7, 65, 35, 12, 15, 90, 7, 65, 4]
+# -------------------------------------------------------
+# Q33: Find the number of digits in a number
+#
+# 8527 >>>> 4
+# 85270073 >>>>> 8
