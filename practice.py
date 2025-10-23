@@ -294,16 +294,46 @@
 # -------------------------------------------------------
 # Q22: Find all the prime numbers under 1000
 # Ex: 2, 3, 5, 7, 11, 13, ...., 997
+# for x in range(2, 1000):
+#     c = 0
+#     for i in range(1, x + 1):
+#         if x % i == 0:
+#             c = c + 1
+#     if c == 2:
+#         print(x)
 # -------------------------------------------------------
-# Q23: Sort the list from largest to smallest
 # lst = [12, 18, 7, 65, 35, 3, 15, 90]
+# lst2 = []
+# t = len(lst)
+
+# for i in range(t):
+#     maxi = lst[0]
+#     for item in lst:
+#         if item > maxi:
+#             maxi = item
+#     lst2.append(maxi)   # Adds the largest value
+#     lst.remove(maxi)    # Removes it from the original list
+
+# print(lst2)
 # -------------------------------------------------------
 # Q24: Find the common numbers in both lists
 # lst_1 = [12, 18, 7, 65, 35, 3, 15, 90]
 # lst_2 = [90, 13, 12, 15, 16, 8, 2, 11]
 # Ex: 12, 15, 90
+# Q24: Find the common numbers in both lists
+
+# for item in lst_1:
+#     if item in lst_2:
+#         print(item)
 # -------------------------------------------------------
-# Q25: Find the smallest number in the first half from the list
 # lst = [12, 18, 7, 65, 35, 3, 15, 90]
-#       \_____________/
-# 7
+
+# half = len(lst) // 2        # Find midpoint
+# first_half = lst[:half]     # Slice first half of the list
+
+# mini = first_half[0]        # Assume first element is smallest
+# for item in first_half:
+#     if item < mini:
+#         mini = item
+
+# print(mini)
