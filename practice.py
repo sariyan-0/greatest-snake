@@ -328,12 +328,11 @@
 # -------------------------------------------------------
 # lst = [12, 18, 7, 65, 35, 3, 15, 90]
 
-# half = len(lst) // 2        # Find midpoint
-# first_half = lst[:half]     # Slice first half of the list
+# half = len(lst) // 2
+# mini = lst[0]
 
-# mini = first_half[0]        # Assume first element is smallest
-# for item in first_half:
-#     if item < mini:
-#         mini = item
+# for i in range(half):
+#     if lst[i] < mini:
+#         mini = lst[i]
 
 # print(mini)
