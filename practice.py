@@ -294,14 +294,17 @@
 # -------------------------------------------------------
 # Q22: Find all the prime numbers under 1000
 # Ex: 2, 3, 5, 7, 11, 13, ...., 997
-for x in range(1, 1000):
-    c = 0
-    for i in range(1, x + 1):
-        if x % i == 0:
-            c = c + 1
-    if c == 2:
-        print(x)
+# prime_lst = []
+# for x in range(1, 1000):
+#     c = 0
+#     for i in range(1, x + 1):
+#         if x % i == 0:
+#             c = c + 1
+#     if c == 2:
+#         prime_lst.append(x)
+# print(prime_lst)
 # -------------------------------------------------------
+# Q23: Sort the list from largest to smallest
 # lst = [12, 18, 7, 65, 35, 3, 15, 90]
 # lst2 = []
 # t = len(lst)
@@ -309,7 +312,7 @@ for x in range(1, 1000):
 # for i in range(t):
 #     maxi = lst[0]
 #     for item in lst:
-#         if item > maxi:
+#         if item < maxi:
 #             maxi = item
 #     lst2.append(maxi)   # Adds the largest value
 #     lst.remove(maxi)    # Removes it from the original list
@@ -317,14 +320,15 @@ for x in range(1, 1000):
 # print(lst2)
 # -------------------------------------------------------
 # Q24: Find the common numbers in both lists
-# lst_1 = [12, 18, 7, 65, 35, 3, 15, 90]
-# lst_2 = [90, 13, 12, 15, 16, 8, 2, 11]
+lst_1 = [12, 18, 7, 65, 35, 3, 15, 90]
+lst_2 = [90, 13, 12, 15, 16, 8, 2, 11]
 # Ex: 12, 15, 90
-# Q24: Find the common numbers in both lists
 
-# for item in lst_1:
-#     if item in lst_2:
-#         print(item)
+common = []
+for item in lst_1:
+    if item in lst_2:
+        common.append(item)
+print(common)
 # -------------------------------------------------------
 # lst = [12, 18, 7, 65, 35, 3, 15, 90]
 
@@ -336,3 +340,4 @@ for x in range(1, 1000):
 #         mini = lst[i]
 
 # print(mini)
+# -------------------------------------------------------
