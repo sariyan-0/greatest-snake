@@ -426,7 +426,7 @@
 
 # print(result)
 # -------------------------------------------------------
-# Q29: Find all the prime numbers under 1000
+# Q29: Find all the perfect numbers under 10000
 
 # for x in range(1, 10000):
 #     total = 0
@@ -438,15 +438,41 @@
 #         print(x)
 # -------------------------------------------------------
 # Q30: Find the smallest common number
-lst = [12, 18, 7, 65, 35, 5, 15, 90]
-lst_2 = [90, 13, 12, 15, 16, 8, 2, 11]
+# lst = [12, 18, 7, 65, 35, 5, 15, 90]
+# lst_2 = [90, 13, 12, 15, 16, 8, 2, 11]
+
+# mini = []
+# maxi = []
+# smallest = lst[0]
+# for item in lst: # Tries each number in the list
+#     if item in lst_2:
+#         smallest = item
+# for item in lst:
+#         if item in lst_2 and item < smallest:
+#              smallest = item
+
+# print (smallest)
+
 # -------------------------------------------------------
 # Q31: Find if x is in the list or not?
-lst = [12, 18, 7, 65, 35, 5, 15, 90]
-# Yes/No
+# lst = [12, 18, 7, 65, 35, 5, 15, 90]
+# # Yes/No
+# x = 13
+# if x in (lst):
+#     print("Yes")
+# else:
+#     print("No")
+
 # -------------------------------------------------------
 # Q32: Find the repeated numbers in the list
-lst = [12, 18, 7, 65, 35, 12, 15, 90, 7, 65, 4]
+# lst = [12, 18, 7, 65, 35, 12, 15, 90, 7, 65, 4]
+# repeated = []
+
+# for item in (lst):
+#     if lst.count(item) > 1 and item not in repeated:
+#         repeated.append(item)
+
+# print(repeated)
 # -------------------------------------------------------
 # Q33: Find the number of digits in a number
 #
