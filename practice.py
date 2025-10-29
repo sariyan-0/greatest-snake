@@ -441,8 +441,8 @@
 # lst = [12, 18, 7, 65, 35, 5, 15, 90]
 # lst_2 = [90, 13, 12, 15, 16, 8, 2, 11]
 
-# mini = []
-# maxi = []
+mini = []
+maxi = []
 # smallest = lst[0]
 # for item in lst: # Tries each number in the list
 #     if item in lst_2:
