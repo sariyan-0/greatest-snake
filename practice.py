@@ -560,12 +560,23 @@ lst = [12, 18, 7, 65, 35, 12, 15, 90, 7, 65, 4]
 #     print("This is not a prime number")
 # --------------------------------------------------------
 # Q37: Create a fibonacci number till 20 units
-lst = [1, 1]
-a = 1
-b = 1
-for i in range(20):
-    f = a + b
-    lst.append(f)
-    a = b
-    b = f
-print(lst)
+# lst = [1, 1]
+# a = 1
+# b = 1
+# for i in range(20):
+#     f = a + b
+#     lst.append(f)
+#     a = b
+#     b = f
+# print(lst)
+# --------------------------------------------------------
+# Q38: Orgenize the following list using bubble sort
+lst = [12, 18, 7, 65, 35, 12, 15, 90, 7, 65, 4]
+# --------------------------------------------------------
+# Q39: Find the average of of 30 fibonacci numbers
+
+# --------------------------------------------------------
+# Q40: Remove the repeated numbers
+lst = [12, 18, 7, 65, 35, 12, 15, 90, 7, 65, 4]
+# Output: 
+#       [12, 18, 10, 7, 65, 20, 60]
