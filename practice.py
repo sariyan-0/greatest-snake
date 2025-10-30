@@ -485,7 +485,7 @@ lst_2 = [90, 13, 12, 15, 16, 8, 2, 11]
 #     print("No, we didnt find the number!")
 # # -------------------------------------------------------
 # Q32: Find the repeated numbers in the list
-# lst = [12, 18, 7, 65, 35, 12, 15, 90, 7, 65, 4]
+lst = [12, 18, 7, 65, 35, 12, 15, 90, 7, 65, 4]
 # repeated = []
 
 # for item in (lst):
@@ -493,7 +493,26 @@ lst_2 = [90, 13, 12, 15, 16, 8, 2, 11]
 #         repeated.append(item)
 
 # print(repeated)
-# -------------------------------------------------------
+# ----------------------------
+repeated = []
+for num in lst:
+    c = 0
+    for item in lst:
+        if num == item:
+            c = c + 1
+    if c > 1:
+        if num not in repeated:
+            repeated.append(num)
+print (repeated)
+# ---------------------------
+repeated = []
+for num in lst:
+    c = lst.count(num)
+    if c > 1:
+        if num not in repeated:
+            repeated.append(num)
+print (repeated)
+# ------------------------------------------------------
 # Q33: Find the number of digits in a number
 #
 # 8527 >>>> 4
