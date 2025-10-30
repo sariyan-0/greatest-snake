@@ -438,11 +438,11 @@
 #         print(x)
 # -------------------------------------------------------
 # Q30: Find the smallest common number
-# lst = [12, 18, 7, 65, 35, 5, 15, 90]
-# lst_2 = [90, 13, 12, 15, 16, 8, 2, 11]
+lst = [12, 18, 7, 65, 35, 5, 15, 90]
+lst_2 = [90, 13, 12, 15, 16, 8, 2, 11]
 
-mini = []
-maxi = []
+# mini = []
+# maxi = []
 # smallest = lst[0]
 # for item in lst: # Tries each number in the list
 #     if item in lst_2:
@@ -452,18 +452,38 @@ maxi = []
 #              smallest = item
 
 # print (smallest)
-
+# ----------------------------
+# lst_common = []
+# for num in lst:
+#     for item in lst_2:
+#         if num == item:
+#             lst_common.append(num)
+# mini = lst_common[0]
+# for item in lst_common:
+#     if item < mini:
+#         mini = item
+# print(mini)
 # -------------------------------------------------------
 # Q31: Find if x is in the list or not?
 # lst = [12, 18, 7, 65, 35, 5, 15, 90]
-# # Yes/No
+# Yes/No
 # x = 13
 # if x in (lst):
 #     print("Yes")
 # else:
 #     print("No")
+# ----------------------------
+# label = "No"
+# for item in lst:
+#     if x == item:
+#         label = "Yes"
 
-# -------------------------------------------------------
+# if label == "Yes":
+#     print ("Yes, we found the number!")
+
+# else:
+#     print("No, we didnt find the number!")
+# # -------------------------------------------------------
 # Q32: Find the repeated numbers in the list
 # lst = [12, 18, 7, 65, 35, 12, 15, 90, 7, 65, 4]
 # repeated = []
