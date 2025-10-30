@@ -525,4 +525,13 @@ if (x ** 0.5) % 1 == 0:
     print("Perfect square")
 else:
     print("Not a perfect square")
+# ----------------------------
+number = "No"
+for item in range(1, x):
+    if item * item == x:
+        number = "Yes"
 
+if number == "Yes":
+    print(x, "is a squre number")
+else:
+    print(x, "is not a square number")
