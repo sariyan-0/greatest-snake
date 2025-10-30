@@ -494,26 +494,35 @@ lst = [12, 18, 7, 65, 35, 12, 15, 90, 7, 65, 4]
 
 # print(repeated)
 # ----------------------------
-repeated = []
-for num in lst:
-    c = 0
-    for item in lst:
-        if num == item:
-            c = c + 1
-    if c > 1:
-        if num not in repeated:
-            repeated.append(num)
-print (repeated)
+# repeated = []
+# for num in lst:
+#     c = 0
+#     for item in lst:
+#         if num == item:
+#             c = c + 1
+#     if c > 1:
+#         if num not in repeated:
+#             repeated.append(num)
+# print (repeated)
 # ---------------------------
-repeated = []
-for num in lst:
-    c = lst.count(num)
-    if c > 1:
-        if num not in repeated:
-            repeated.append(num)
-print (repeated)
+# repeated = []
+# for num in lst:
+#     c = lst.count(num)
+#     if c > 1:
+#         if num not in repeated:
+#             repeated.append(num)
+# print (repeated)
 # ------------------------------------------------------
 # Q33: Find the number of digits in a number
 #
 # 8527 >>>> 4
 # 85270073 >>>>> 8
+# ------------------------------------------------------
+# Q34: Find if the following number is a perfect square
+x = 16
+
+if (x ** 0.5) % 1 == 0:
+    print("Perfect square")
+else:
+    print("Not a perfect square")
+
