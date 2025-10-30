@@ -519,19 +519,53 @@ lst = [12, 18, 7, 65, 35, 12, 15, 90, 7, 65, 4]
 # 85270073 >>>>> 8
 # ------------------------------------------------------
 # Q34: Find if the following number is a perfect square
-x = 16
+# x = 16
 
-if (x ** 0.5) % 1 == 0:
-    print("Perfect square")
-else:
-    print("Not a perfect square")
+# if (x ** 0.5) % 1 == 0:
+#     print("Perfect square")
+# else:
+#     print("Not a perfect square")
 # ----------------------------
-number = "No"
-for item in range(1, x):
-    if item * item == x:
-        number = "Yes"
+# number = "No"
+# for item in range(1, x):
+#     if item * item == x:
+#         number = "Yes"
 
-if number == "Yes":
-    print(x, "is a squre number")
-else:
-    print(x, "is not a square number")
+# if number == "Yes":
+#     print(x, "is a squre number")
+# else:
+#     print(x, "is not a square number")
+# --------------------------------------------------------
+# Q35: Find the non repeated numbers
+# lst = [12, 18, 7, 65, 35, 12, 15, 90, 7, 65, 4]
+
+# non_repeated = []
+# for num in lst:
+#     if lst.count(num) == 1:
+#         non_repeated.append(num)
+# print (non_repeated)
+# --------------------------------------------------------
+# Q36: Find if x is a prime number using label
+# x = 12
+# label = "Yes"
+
+# for item in range(2, x):
+#     if x % item == 0:
+#         label = "No"
+
+
+# if label == "Yes":
+#     print("This is a prime number")
+# else:
+#     print("This is not a prime number")
+# --------------------------------------------------------
+# Q37: Create a fibonacci number till 20 units
+lst = [1, 1]
+a = 1
+b = 1
+for i in range(20):
+    f = a + b
+    lst.append(f)
+    a = b
+    b = f
+print(lst)
