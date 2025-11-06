@@ -63,3 +63,12 @@ while x < 1000:
     x = x + 1
 
 print(prime)
+#####################################################
+# Q5: Find all perfect numbers under 10000
+
+#####################################################
+# Q6: Fibonacci numbers using while
+
+#####################################################
+# Q7: Find the total of all the numbers in a list using the while statemnt
+lst = [10, 50, 40, 5, 20]
