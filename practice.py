@@ -438,8 +438,8 @@
 #         print(x)
 # -------------------------------------------------------
 # Q30: Find the smallest common number
-lst = [12, 18, 7, 65, 35, 5, 15, 90]
-lst_2 = [90, 13, 12, 15, 16, 8, 2, 11]
+# lst = [12, 18, 7, 65, 35, 5, 15, 90]
+# lst_2 = [90, 13, 12, 15, 16, 8, 2, 11]
 
 # mini = []
 # maxi = []
@@ -569,6 +569,23 @@ lst = [12, 18, 7, 65, 35, 12, 15, 90, 7, 65, 4]
 #     a = b
 #     b = f
 # print(lst)
+# ----------------------------
+# lst = [1, 1]
+# f = lst[0] + lst[1]
+# lst.append(f)
+# #
+# f = lst[1] + lst[2]
+# lst.append(f)
+# #
+# f = lst[2] + lst[3]
+# lst.append(f)
+# print(lst)
+# ----------------------------
+# lst = [1, 1]
+# for i in range (20):
+#     f = lst[i] + lst [i + 1]
+#     lst.append(f)
+# print(lst)
 # --------------------------------------------------------
 # Q38: Orgenize the following list using bubble sort
 lst = [12, 18, 7, 65, 35, 12, 15, 90, 7, 65, 4]
@@ -590,8 +607,12 @@ for i in range(28):   # Loop to repeat for the rest
     a = b
     b = f
 
-avg = sum(lst) / len(lst)
-print(avg)
+total = 0
+for item in lst:
+    total = total + item
+
+average = total / 30
+print(average)
 
 # --------------------------------------------------------
 # Q40: Remove the repeated numbers
