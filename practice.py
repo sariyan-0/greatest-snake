@@ -572,6 +572,11 @@ lst = [12, 18, 7, 65, 35, 12, 15, 90, 7, 65, 4]
 # --------------------------------------------------------
 # Q38: Orgenize the following list using bubble sort
 lst = [12, 18, 7, 65, 35, 12, 15, 90, 7, 65, 4]
+
+
+
+
+
 # --------------------------------------------------------
 # Q39: Find the average of of 30 fibonacci numbers
 
@@ -591,11 +596,10 @@ print(avg)
 # --------------------------------------------------------
 # Q40: Remove the repeated numbers
 lst = [12, 18, 7, 65, 35, 12, 15, 90, 7, 65, 4]
-# Output: 
-#       [12, 18, 10, 7, 65, 20, 60]
-new_lst = []
-for x in lst:
-    if x not in new_lst:
-        new_lst.append(x)
 
-print(new_lst)
+not_repeated = []
+for x in lst:
+    if x not in not_repeated:
+        not_repeated.append(x)
+
+print(not_repeated)
