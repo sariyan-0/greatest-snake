@@ -574,7 +574,6 @@ lst = [12, 18, 7, 65, 35, 12, 15, 90, 7, 65, 4]
 lst = [12, 18, 7, 65, 35, 12, 15, 90, 7, 65, 4]
 # --------------------------------------------------------
 # Q39: Find the average of of 30 fibonacci numbers
-# Q39: Average of 30 Fibonacci numbers (using your Q37 style)
 
 lst = [1, 1]
 a = 1
