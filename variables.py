@@ -18,5 +18,9 @@ iphone_15 = 1000
 GRAVITY = 9.8
 PI = 3.14159265359
 
+lst = ["well"]
+for item in lst:
+    if PI == 3.14159265359:
+        print(lst)
 
 

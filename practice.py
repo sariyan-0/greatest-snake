@@ -574,9 +574,29 @@ lst = [12, 18, 7, 65, 35, 12, 15, 90, 7, 65, 4]
 lst = [12, 18, 7, 65, 35, 12, 15, 90, 7, 65, 4]
 # --------------------------------------------------------
 # Q39: Find the average of of 30 fibonacci numbers
+# Q39: Average of 30 Fibonacci numbers (using your Q37 style)
+
+lst = [1, 1]
+a = 1
+b = 1
+
+for i in range(28):   # Loop to repeat for the rest
+    f = a + b
+    lst.append(f)
+    a = b
+    b = f
+
+avg = sum(lst) / len(lst)
+print(avg)
 
 # --------------------------------------------------------
 # Q40: Remove the repeated numbers
 lst = [12, 18, 7, 65, 35, 12, 15, 90, 7, 65, 4]
 # Output: 
 #       [12, 18, 10, 7, 65, 20, 60]
+new_lst = []
+for x in lst:
+    if x not in new_lst:
+        new_lst.append(x)
+
+print(new_lst)
