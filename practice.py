@@ -590,6 +590,15 @@ lst = [12, 18, 7, 65, 35, 12, 15, 90, 7, 65, 4]
 # Q38: Orgenize the following list using bubble sort
 lst = [12, 18, 7, 65, 35, 12, 15, 90, 7, 65, 4]
 
+n = len(lst)
+
+for i in range(n - 1):
+    for j in range(n - 1 - i):
+        if lst[j] > lst[j + 1]:
+            lst[j], lst[j + 1] = lst[j + 1], lst[j]
+
+print("Sorted list:", lst)
+
 
 
 
