@@ -95,7 +95,7 @@
 # print(fib)
 
 #####################################################
-# Q7: Find the total of all the numbers in a list using the while statemnt
+# # Q7: Find the total of all the numbers in a list using the while statemnt
 # lst = [10, 50, 40, 5, 20]
 # i = 0
 # total = 0
@@ -106,3 +106,59 @@
 #     i = i + 1
 
 # print("Total:", total) 
+#####################################################
+# Q8: Find the average of the odd numbers in the list
+
+# list = [13, 12, 5, 1, 2]
+# c = 0
+# total = 0
+# x = 0
+
+# while x < len(list):
+#     if list[x] % 2 == 0:
+#         total = total + list[x]
+#         c = c + 1
+#     x = x + 1
+
+# av = total / 2
+# print(av)
+#####################################################
+# Q9: print the biggest number in the list
+# lst = [12, 18, 3, 100, 65, 25, 7, 15, 90]
+# i = 0
+# largest = lst[0]
+
+# while i < len(lst):
+#     if lst[i] > largest:
+#         largest = lst[i]
+#     i = i + 1
+
+# print(largest)
+#####################################################
+# Q10: Organize the following list
+lst = [12, 18, 7, 65, 35, 3, 15, 90]
+lst2 = []
+t = len(lst)
+i = 0
+while i < t:
+    mini = lst[0]
+    j = 0
+    while j < len(lst):
+        if lst[j] < mini:
+            mini = lst[j]  
+        j = j + 1  
+    lst2.append (mini) # Adds mini to lst2
+    lst.remove (mini) # Removes mini from lst
+    i = i + 1
+print(lst2)
+
+
+
+# for i in range (t):
+#     mini = lst[0]
+#     for item in lst:
+#         if item < mini:
+#             mini = item
+#     lst2.append (mini) # Adds mini to lst2
+#     lst.remove (mini) # Removes mini from lst
+
