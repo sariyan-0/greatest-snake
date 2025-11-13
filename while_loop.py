@@ -48,27 +48,61 @@
 # print (total)
 #####################################################
 # Q4: Find prime numbers under 1000
-prime = []
-x = 2
+# prime = []
+# x = 2
 
-while x < 1000:
-    c = 0
-    i = 1  
-    while i < x + 1:
-        if x % i == 0:
-            c = c + 1
-        i = i + 1
-    if c == 2:
-        prime.append(x)
-    x = x + 1
+# while x < 1000:
+#     c = 0
+#     i = 1  
+#     while i < x + 1:
+#         if x % i == 0:
+#             c = c + 1
+#         i = i + 1
+#     if c == 2:
+#         prime.append(x)
+#     x = x + 1
 
-print(prime)
+# print(prime)
 #####################################################
 # Q5: Find all perfect numbers under 10000
+# perfect = []
+# x = 2
 
+# while x < 10000:
+#     s = 0
+#     i = 1
+#     while i < x:
+#         if x % i == 0:
+#             s = s + i
+#         i = i + 1
+#     if s == x:
+#         perfect.append(x)
+#     x = x + 1
+
+# print(perfect)
 #####################################################
 # Q6: Fibonacci numbers using while
+# fib = [0, 1]
+# x = 0
+# y = 1
+
+# while y < 10000:
+#     z = x + y
+#     fib.append(z)
+#     x = y
+#     y = z
+
+# print(fib)
 
 #####################################################
 # Q7: Find the total of all the numbers in a list using the while statemnt
-lst = [10, 50, 40, 5, 20]
+# lst = [10, 50, 40, 5, 20]
+# i = 0
+# total = 0
+
+# # Keep looping as long as i is less than the number of items in the list
+# while i < len(lst): 
+#     total = total + lst[i]
+#     i = i + 1
+
+# print("Total:", total) 
