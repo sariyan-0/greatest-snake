@@ -136,29 +136,37 @@
 # print(largest)
 #####################################################
 # Q10: Organize the following list
-lst = [12, 18, 7, 65, 35, 3, 15, 90]
-lst2 = []
-t = len(lst)
-i = 0
-while i < t:
-    mini = lst[0]
-    j = 0
-    while j < len(lst):
-        if lst[j] < mini:
-            mini = lst[j]  
-        j = j + 1  
-    lst2.append (mini) # Adds mini to lst2
-    lst.remove (mini) # Removes mini from lst
-    i = i + 1
-print(lst2)
-
-
-
-# for i in range (t):
+# lst = [12, 18, 7, 65, 35, 3, 15, 90]
+# lst2 = []
+# t = len(lst)
+# i = 0
+# while i < t:
 #     mini = lst[0]
-#     for item in lst:
-#         if item < mini:
-#             mini = item
+#     j = 0
+#     while j < len(lst):
+#         if lst[j] < mini:
+#             mini = lst[j]  
+#         j = j + 1  
 #     lst2.append (mini) # Adds mini to lst2
 #     lst.remove (mini) # Removes mini from lst
+#     i = i + 1
+# print(lst2)
+#####################################################
+# Q11: Find the common numbers in both lists
+lst_1 = [12, 18, 7, 65, 35, 3, 15, 90]
+lst_2 = [90, 13, 12, 15, 16, 8, 2, 11]
+# Ex: 12, 15, 90
+common = []
+t1 = len(lst_1)
+t2 = len(lst_2)
+i = 0
+
+while i < t1:
+    j = 0
+    while j < t2:
+        if lst_1[i] == lst_2[j]:       
+            common.append(lst_1[i])
+        j = j + 1 
+    i = i + 1
+print(common)
 
