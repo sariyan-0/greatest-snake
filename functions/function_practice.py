@@ -80,8 +80,8 @@ def average(lst_x):
     return avg
 
 # call
-a = average(    [12, 18, 7, 65, 35, 3, 15, 4 ]  )
-print(a)
+# a = average(    [12, 18, 7, 65, 35, 3, 15, 4 ]  )
+# print(a)
 ############################################################
 # Q6: Orgenize the list
 # def
@@ -101,6 +101,25 @@ def sorting(lst_x):
     return(lst_2)
 
 # call
-lst_50 = [12, 18, 7, 65, 35, 3, 15, 4 ]
-a = sorting(lst_50)
-print (a)
+# lst = [12, 18, 7, 65, 35, 3, 15, 4 ]
+# a = sorting(lst)
+# print (a)
+############################################################
+# Q7: Find the common numbers in both lists
+# def
+
+def common_items(lst_x, lst_y):
+    lst_common = []
+    for item in lst_1:
+        if item in lst_2:
+            lst_common.append(item)
+    return lst_common
+
+# call
+lst_1 = [12, 18, 7, 65, 35, 3, 15, 90]
+lst_2 = [90, 13, 12, 15, 16, 8, 2, 11]
+
+# a = common_items(lst_1, lst_2)
+# print(a)
+############################################################
+# Q7;
