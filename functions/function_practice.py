@@ -160,19 +160,46 @@ def exist(number_x, lst_x): # Two inputs, one for finding the number and the oth
         return "No, we didnt find the number!"
     
 # call
-lst_x = [12, 18, 7, 65, 35, 5, 15, 90]
-a  = exist(12, lst_x)
-print(a)
+# lst_x = [12, 18, 7, 65, 35, 5, 15, 90]
+# a  = exist(12, lst_x)
+# print(a)
 ############################################################
-# Q10: 
+# Q10: Find the repeted numbers in the lists
+# define
+lst_x = [12, 18, 7, 65, 35, 12, 15, 90, 7, 65, 4]
+
+def repeated(numbers):
+    repeated_items = []
+    for num in numbers:
+        c = lst_x.count(num)
+        if c > 1 and num not in repeated_items:
+            repeated_items.append(num)
+    return repeated_items
+
+# call
+# a = repeated(lst_x)
+# print(a)
 ############################################################
-# Q11: 
+# Q11: Find the average of 3 digit prime numbers
+
+lst_p = []
+for num in range(100, 1000):
+    a =  is_prime(num)
+    if a == "A prime number":
+        lst_p.append(num)
+av = average(lst_p)
+print(av)           #524.94
 ############################################################
+# ----------------------------------------------------------
 # Q12: Largest common multiple
 #
 # 12 >>> 1, 2, 3, 4, 6, 8
 #                           >>> 1, 2, 3, 6, >>> 6
 # 18 >>> 1, 2, 3, 6, 9, 18
+# ----------------------------------------------------------
+#
+#           <<<< Functions are Reusable >>>>
+#
 # ----------------------------------------------------------
 # Biggest common number
 # lst_12 = divisor(12)
@@ -214,4 +241,9 @@ print(a)
 
 ############################################################
 # Q13: 
-###########################################################
+############################################################
+# Q14: 
+############################################################
+# Q15: 
+############################################################
+# Q16: 
