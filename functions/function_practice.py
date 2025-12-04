@@ -168,9 +168,9 @@ def exist(number_x, lst_x): # Two inputs, one for finding the number and the oth
 # define
 lst_x = [12, 18, 7, 65, 35, 12, 15, 90, 7, 65, 4]
 
-def repeated(numbers):
+def repeated(x):
     repeated_items = []
-    for num in numbers:
+    for num in lst_x:
         c = lst_x.count(num)
         if c > 1 and num not in repeated_items:
             repeated_items.append(num)
@@ -181,14 +181,14 @@ def repeated(numbers):
 # print(a)
 ############################################################
 # Q11: Find the average of 3 digit prime numbers
-
 lst_p = []
 for num in range(100, 1000):
     a =  is_prime(num)
     if a == "A prime number":
         lst_p.append(num)
-av = average(lst_p)
-print(av)           #524.94
+
+# av = average(lst_p)
+# print(av)           #524.94
 ############################################################
 # ----------------------------------------------------------
 # Q12: Largest common multiple
@@ -240,10 +240,28 @@ print(av)           #524.94
 # print (a) # 6
 
 ############################################################
-# Q13: 
+# Q13: Find the smallest prime number in the list
+# lst = [7812, 3019, 2021, 5877, 7919, 6733, 4231]
+lst_p = []
+# for num in lst:
+#         if is_prime(num) == "A prime number":
+#            lst_p.append(num)
+
+# m = minimun(lst_p)
+# print(m)
+
 ############################################################
-# Q14: 
+# Q14: Find the biggest repeated number
+lst = [4, 5, 10, 9, 5, 3, 11, 3, 5, 18, 13, 11]
+lst_r  = repeated(lst)
+print(lst_r)
+m = maximum(lst_r)
+print (m)
+# Possible Error/Incomplete
+
 ############################################################
-# Q15: 
+# Q15: Function to find complete number
 ############################################################
-# Q16: 
+# Q16: Function to find 20 fibonacci numbers
+############################################################
+# Q16: Function to find non-repeated numbers in a list
