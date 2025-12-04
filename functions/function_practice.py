@@ -110,10 +110,11 @@ def sorting(lst_x):
 
 def common_items(lst_x, lst_y):
     lst_common = []
-    for item in lst_1:
-        if item in lst_2:
-            lst_common.append(item)
+    for item_a in lst_x:
+        if item_a in lst_y:
+            lst_common.append(item_a)
     return lst_common
+
 
 # call
 lst_1 = [12, 18, 7, 65, 35, 3, 15, 90]
@@ -122,4 +123,58 @@ lst_2 = [90, 13, 12, 15, 16, 8, 2, 11]
 # a = common_items(lst_1, lst_2)
 # print(a)
 ############################################################
-# Q7
+# Q8: 
+############################################################
+# Q9: 
+############################################################
+# Q10: 
+############################################################
+# Q11: 
+############################################################
+# Q12: Largest common multiple
+#
+# 12 >>> 1, 2, 3, 4, 6, 8
+#                           >>> 1, 2, 3, 6, >>> 6
+# 18 >>> 1, 2, 3, 6, 9, 18
+# ----------------------------------------------------------
+# Biggest common number
+lst_12 = divisor(12)
+lst_18 = divisor(18)
+lst_c = common_items(lst_12, lst_18)
+lcm = maximum(lst_c)
+print(lcm)
+# ----------------------------------------------------------
+# x = 12
+# lst_12 = []
+# for item in range (1, x + 1):
+#     if x % item == 0:
+#         lst_12.append(item)
+
+# # print(lst_12)
+# y = 18
+# lst_18 = []
+# for item in range(1, y + 1):
+#     if y % item == 0:
+#         lst_18.append(item)
+# # print(lst_18)
+# lst_c = []
+# for a in lst_12:
+#     for b in lst_18:
+#         if a == b:
+#             lst_c.append(b)
+# # print(lst_c)
+
+# def maximum(lst_x):
+#     maxi = lst_x[0]
+#     for item in lst_x:
+#         if item > maxi:
+#             maxi = item
+#     return maxi
+
+# # call
+# a = maximum(lst_c)
+# print (a) # 6
+
+############################################################
+# Q13: 
+###########################################################
