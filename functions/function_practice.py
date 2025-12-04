@@ -138,10 +138,31 @@ def primes():
     return prime_lst
 
 # call
-a = primes()
-print(a)
+# a = primes()
+# print(a)
 ############################################################
-# Q9: 
+# Q9: Find if x is in the list or not?
+
+x = 7
+# Yes/No
+# define
+def exist(number_x, lst_x): # Two inputs, one for finding the number and the other for the list
+    label = "No"
+    for item in lst:
+        if x == item:
+            label = "Yes"
+
+
+    if label == "Yes":
+        return "Yes, we found the number!"
+
+    else:
+        return "No, we didnt find the number!"
+    
+# call
+lst_x = [12, 18, 7, 65, 35, 5, 15, 90]
+a  = exist(12, lst_x)
+print(a)
 ############################################################
 # Q10: 
 ############################################################
