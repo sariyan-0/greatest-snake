@@ -123,7 +123,23 @@ lst_2 = [90, 13, 12, 15, 16, 8, 2, 11]
 # a = common_items(lst_1, lst_2)
 # print(a)
 ############################################################
-# Q8: 
+# Q8: Find all the prime numbers under 1000
+# Ex: 2, 3, 5, 7, 11, 13, ...., 997
+# define
+def primes():
+    prime_lst = []
+    for x in range(1, 1000):
+        c = 0
+        for i in range(1, x + 1):
+            if x % i == 0:
+                c = c + 1
+        if c == 2:
+            prime_lst.append(x)
+    return prime_lst
+
+# call
+a = primes()
+print(a)
 ############################################################
 # Q9: 
 ############################################################
@@ -138,11 +154,11 @@ lst_2 = [90, 13, 12, 15, 16, 8, 2, 11]
 # 18 >>> 1, 2, 3, 6, 9, 18
 # ----------------------------------------------------------
 # Biggest common number
-lst_12 = divisor(12)
-lst_18 = divisor(18)
-lst_c = common_items(lst_12, lst_18)
-lcm = maximum(lst_c)
-print(lcm)
+# lst_12 = divisor(12)
+# lst_18 = divisor(18)
+# lst_c = common_items(lst_12, lst_18)
+# lcm = maximum(lst_c)
+# print(lcm)
 # ----------------------------------------------------------
 # x = 12
 # lst_12 = []
