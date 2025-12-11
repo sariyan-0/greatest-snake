@@ -261,7 +261,40 @@ print (m)
 
 ############################################################
 # Q15: Function to find complete number
+# def is_complete(x):
+#     total = 0
+#     for i in range(1, x):
+#         if x % i == 0:
+#             total = total + i
+    
+#     if total == x:
+#         return "A complete number"
+#     else:
+#         return "Not a complete number"
 ############################################################
 # Q16: Function to find 20 fibonacci numbers
+# def fibo_20():
+#     lst = [1, 1]   # Starting
+#     a = 1
+#     b = 1
+
+#     for i in range(18):   # already have 2
+#         f = a + b
+#         lst.append(f)
+#         a = b
+#         b = f
+
+#     return lst
+
 ############################################################
-# Q16: Function to find non-repeated numbers in a list
+# Q17: Function to find non-repeated numbers in a list
+# def non_repeated(lst_x):
+#     # reuse "repeated" function
+#     repeated_items = repeated(lst_x)
+
+#     lst_nr = []
+#     for num in lst_x:
+#         if num not in repeated_items:
+#             lst_nr.append(num)
+
+#     return lst_nr
