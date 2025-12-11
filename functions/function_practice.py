@@ -254,10 +254,9 @@ lst_p = []
 # Q14: Find the biggest repeated number
 lst = [4, 5, 10, 9, 5, 3, 11, 3, 5, 18, 13, 11]
 lst_r  = repeated(lst)
-print(lst_r)
-m = maximum(lst_r)
-print (m)
-# Possible Error/Incomplete
+# print(lst_r)
+# m = maximum(lst_r)
+# print (m)
 
 ############################################################
 # Q15: Function to find complete number
@@ -298,3 +297,10 @@ print (m)
 #             lst_nr.append(num)
 
 #     return lst_nr
+############################################################
+# Q18: Find 3 digit numbers that their sum is prime
+for num in range(100, 1000):
+    lst_d = divisor(num)
+    sum_d = sum_lst(lst_d)
+    if is_prime(sum_d) == "A prime number":
+        print(sum_d)
