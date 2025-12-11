@@ -593,16 +593,14 @@ lst = [12, 18, 7, 65, 35, 12, 15, 90, 7, 65, 4]
 n = len(lst)
 
 for i in range(n - 1):
+    # The '- i' part makes sure I don't recheck already sorted elements at the end
     for j in range(n - 1 - i):
+        # If the current element is greater than the next one, swap them
         if lst[j] > lst[j + 1]:
             lst[j], lst[j + 1] = lst[j + 1], lst[j]
 
+
 print("Sorted list:", lst)
-
-
-
-
-
 # --------------------------------------------------------
 # Q39: Find the average of of 30 fibonacci numbers
 
