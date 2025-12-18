@@ -198,3 +198,35 @@ while True:
         print(x)
         break
     x += 1
+#####################################################
+# Q14: Fibonacci numbers
+
+a = 1
+b = 1
+while True:
+    f = a + b
+    cw += 1
+    if cw == 10:
+        print("Damn")
+        print(f)
+        break
+    a = b
+    b = f
+#####################################################
+# Q15: Get a number from the user and then try to find the 5 biggest prime numbers from it
+
+n = int(input("Please enter a number"))
+
+
+#####################################################
+# Q16: Get an input from the user and try to find the biggest prime number that is smaller than n
+
+n = int(input("Please enter a number"))
+
+#####################################################
+# Q17: Get a number from the user and then try to find the 5 biggest prime numbers from it
+
+n = int(input("Please enter a number"))
+
+#####################################################
+# Q17: Find the natural number whose numerators sum to a prime number
