@@ -1,3 +1,4 @@
+from functions.my_functions import *
 #################### While Loop ####################
 # x = 12
 # for item in range(1, x +1 ):
@@ -153,20 +154,47 @@
 # print(lst2)
 #####################################################
 # Q11: Find the common numbers in both lists
-lst_1 = [12, 18, 7, 65, 35, 3, 15, 90]
-lst_2 = [90, 13, 12, 15, 16, 8, 2, 11]
-# Ex: 12, 15, 90
-common = []
-t1 = len(lst_1)
-t2 = len(lst_2)
-i = 0
+# lst_1 = [12, 18, 7, 65, 35, 3, 15, 90]
+# lst_2 = [90, 13, 12, 15, 16, 8, 2, 11]
+# # Ex: 12, 15, 90
+# common = []
+# t1 = len(lst_1)
+# t2 = len(lst_2)
+# i = 0
 
-while i < t1:
-    j = 0
-    while j < t2:
-        if lst_1[i] == lst_2[j]:       
-            common.append(lst_1[i])
-        j = j + 1 
-    i = i + 1
-print(common)
+# while i < t1:
+#     j = 0
+#     while j < t2:
+#         if lst_1[i] == lst_2[j]:       
+#             common.append(lst_1[i])
+#         j = j + 1 
+#     i = i + 1
+# print(common)
+#####################################################
+# Q12: Prime numbers under 1000
 
+# cw = 0
+# x = 1
+# lst = []            # P1
+# while True:         # p2:  Infinite Loop
+#     if is_prime(x) == "A prime number":
+#         cw += 1
+#     if cw == 1000:
+#         print("HELLL YAHH")
+#         print(x)
+#         break       
+#     x += 1          # P3
+#####################################################
+# Q13: Find the 10th 3 digit prime number
+x = 100
+cw = 0
+x = 1
+while True:
+    if is_prime(x) == "A prime number":
+        cw += 1
+    
+    if cw == 10:
+        print("Yesss")
+        print(x)
+        break
+    x += 1
