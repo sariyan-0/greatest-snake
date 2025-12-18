@@ -86,5 +86,29 @@ print(lst_clean)
 
 ###################################################################
 # Q4: Convert question 2 to function
+def clean_words(lst_word):
+    lst_clean = []
+
+    for word in lst_word:
+        g = ""
+        for char in word:
+            if char != "-" and char != "=" and char != "+" and char != "/" and char != "*" and char != "_" and char != "@" and char != "#" and char != "$" and char != "%" and char != "^" and char != "&" and char != "(" and char != ")" and char != "." and char != "?" and char != ">" and char != "<" and char != "," and char != "!" and char != "?" and char != "'" and char != "[" and char != "]" and char != ";" and char != ":" and char != "~" and char != "`" and char != "|":
+                g += char
+        lst_clean.append(g)
+
+    return lst_clean
+
 ###################################################################
 # Q5: Convert question 3 to function
+def clean_words(lst_word):
+    lst_clean = []
+
+    for word in lst_word:
+        g = ""
+        for char in word:
+            if char != "-" and char != "=" and char != "+" and char != "/" and char != "*" and char != "_" and char != "@" and char != "#" and char != "$" and char != "%" and char != "^" and char != "&" and char != "(" and char != ")" and char != "." and char != "?" and char != ">" and char != "<" and char != "," and char != "!" and char != "?" and char != "'" and char != "[" and char != "]" and char != ";" and char != ":" and char != "~" and char != "`" and char != "|":
+                g += char
+        lst_clean.append(g)
+
+    return lst_clean
+
