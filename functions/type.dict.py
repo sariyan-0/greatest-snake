@@ -108,11 +108,41 @@ d_1 = { "Joe": 14, "Dan": 81, "Sara": 8, "Amir": 17}
 # Q3: Organize based on the marks
 d_1 = { "Joe": 14, "Dan": 81, "Sara": 8, "Amir": 17}
 
+
+result = {}
+
+for i in range(len(d_1)):
+    mini = 1000
+    for k, v in d_1.items():
+        if v < mini:
+            mini = v
+            name = k
+
+    result[name] = mini
+    d_1.pop(name)
+
+print(result)
+
+
 ########################################################################
 # Q4: Organize the dictionary based on the name of the students
 d_1 = { "Joe": 14, "Dan": 81, "Sara": 8, "Amir": 17}
 # output: 
 #       A > B > C > D
+
+
+result = {}
+
+for i in range(len(d_1)):
+    first = None
+    for k in d_1.keys():
+        if first == None or k < first:
+            first = k
+
+    result[first] = d_1[first]
+    d_1.pop(first)
+
+print(result)
 
 ########################################################################
 # Q5 : Find the common names in the dictionary
@@ -120,9 +150,21 @@ d_1 = { "Joe": 14, "Dan": 81, "Sara": 8, "Amir": 17}
 d_2 = { "Joe": 54, "Leo": 11, "Sara": 9, "Ellie": 17}
 # output:
 #      {"joe: ???", "Sara:???"}
+
 ########################################################################
 # Q6 : Find the common marks in the dictionaryd_1 = { "Joe": 14, "Dan": 81, "Sara": 8, "Amir": 17}
 d_1 = { "Joe": 11, "Dan": 81, "Sara": 8, "Amir": 17}
 d_2 = { "Joe": 54, "Leo": 11, "Sara": 9, "Ellie": 17}
 # output:
 #       {????????}
+d_1 = { "Joe": 11, "Dan": 81, "Sara": 8, "Amir": 17}
+d_2 = { "Joe": 54, "Leo": 11, "Sara": 9, "Ellie": 17}
+
+common = []
+
+for v in d_1.values():
+    if v in d_2.values():
+        if v not in common:
+            common.append(v)
+
+print(common)
