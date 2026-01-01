@@ -106,3 +106,26 @@ def exist(number_x, lst_x): # Two inputs, one for finding the number and the oth
     else:
         return "No, we didnt find the number!"
     
+def corrected_words(lst_word):
+    lst_correct = []
+
+    for word in lst_word:
+        g = ""
+        for char in word:
+            if char not in "~!@#$%^&*()_+=-|\}]{[]}:;'.,><":
+                g += char
+        lst_correct.append(g)
+
+    return lst_correct
+
+def clean_words(lst_word):
+    lst_clean = []
+
+    for word in lst_word:
+        g = ""
+        for char in word:
+            if char != "-" and char != "=" and char != "+" and char != "/" and char != "*" and char != "_" and char != "@" and char != "#" and char != "$" and char != "%" and char != "^" and char != "&" and char != "(" and char != ")" and char != "." and char != "?" and char != ">" and char != "<" and char != "," and char != "!" and char != "?" and char != "'" and char != "[" and char != "]" and char != ";" and char != ":" and char != "~" and char != "`" and char != "|":
+                g += char
+        lst_clean.append(g)
+
+    return lst_clean

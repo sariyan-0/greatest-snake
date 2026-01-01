@@ -186,47 +186,86 @@ from functions.my_functions import *
 #     x += 1          # P3
 #####################################################
 # Q13: Find the 10th 3 digit prime number
-x = 100
-cw = 0
-x = 1
-while True:
-    if is_prime(x) == "A prime number":
-        cw += 1
+# x = 100
+# cw = 0
+# x = 1
+# while True:
+#     if is_prime(x) == "A prime number":
+#         cw += 1
     
-    if cw == 10:
-        print("Yesss")
-        print(x)
-        break
-    x += 1
+#     if cw == 10:
+#         print("Yesss")
+#         print(x)
+#         break
+#     x += 1
 #####################################################
 # Q14: Fibonacci numbers
 
-a = 1
-b = 1
-while True:
-    f = a + b
-    cw += 1
-    if cw == 10:
-        print("Damn")
-        print(f)
-        break
-    a = b
-    b = f
+# a = 1
+# b = 1
+# while True:
+#     f = a + b
+#     cw += 1
+#     if cw == 10:
+#         print("Damn")
+#         print(f)
+#         break
+#     a = b
+#     b = f
 #####################################################
 # Q15: Get a number from the user and then try to find the 5 biggest prime numbers from it
+# n = int(input("Please enter a number"))
+# lst = []
+# cw = 0
+# x = n - 1   
 
-n = int(input("Please enter a number"))
-
+# while True:
+#     while True:
+#         if is_prime(x) == "A prime number":
+#             cw += 1
+#             lst.append(x)
+#             if cw == n:
+#                 print("YAyyy")
+#                 print(lst)
+#                 break
+#         x += 1   
+#     break
 
 #####################################################
 # Q16: Get an input from the user and try to find the biggest prime number that is smaller than n
+# n = int(input("Please enter a number: "))
+# lst = []
+# for x in range(1, n):
+#     if is_prime(x) == "A prime number":
+#         lst.append(x)
+# print(lst)
+# last_element_index = len(lst) - 1
+# print(lst[last_element_index])
+# print(lst[-1])
 
-n = int(input("Please enter a number"))
+
+
+#       0    1    2    3    4
+lst = [ 10, 50, 100, 500, 1000]
+#      -5   -4   -3   -2   -1           # Negative index
+# ---------------------------------------------------
+n = int(input("Please enter a number: "))
+x = n - 1
+cw = 0
+lst = []
+
+while True:
+    if is_prime(x) == "A prime number":
+        cw += 1
+    if cw == 1:
+        print ("Yayyyy")
+        print(x)
+        break
+    x -= 1
+print(lst)
+
+
+
 
 #####################################################
-# Q17: Get a number from the user and then try to find the 5 biggest prime numbers from it
-
-n = int(input("Please enter a number"))
-
-#####################################################
-# Q17: Find the natural number whose numerators sum to a prime number
+# Q17: Find the natural number whos numerators sum to a prime number

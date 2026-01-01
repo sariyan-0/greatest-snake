@@ -76,7 +76,7 @@ print(lst_word)
 lst_clean = []
 
 for word in lst_word:
-    g = ""                 # <-- RESET for each word
+    g = ""
     for char in word:
         if char != "-" and char != "=" and char != "+" and char != "/" and char != "*" and char != "_" and char != "@" and char != "#" and char != "$" and char != "%" and char != "^" and char != "&" and char != "(" and char != ")" and char != "." and char != "?" and char != ">" and char != "<" and char != "," and char != "!" and char != "?" and char != "'" and char != "[" and char != "]" and char != ";" and char != ":" and char != "~" and char != "`" and char != "|": 
             g += char
@@ -100,15 +100,19 @@ def clean_words(lst_word):
 
 ###################################################################
 # Q5: Convert question 3 to function
-def clean_words(lst_word):
-    lst_clean = []
+def corrected_words(lst_word):
+    lst_correct = []
 
     for word in lst_word:
         g = ""
         for char in word:
-            if char != "-" and char != "=" and char != "+" and char != "/" and char != "*" and char != "_" and char != "@" and char != "#" and char != "$" and char != "%" and char != "^" and char != "&" and char != "(" and char != ")" and char != "." and char != "?" and char != ">" and char != "<" and char != "," and char != "!" and char != "?" and char != "'" and char != "[" and char != "]" and char != ";" and char != ":" and char != "~" and char != "`" and char != "|":
+            if char not in "~!@#$%^&*()_+=-|\}]{[]}:;'.,><":
                 g += char
-        lst_clean.append(g)
+        lst_correct.append(g)
 
-    return lst_clean
+    return lst_correct
+
+# call
+a = corrected_words(["bo!m$b", "Ex@plo.de"])
+print (a)
 

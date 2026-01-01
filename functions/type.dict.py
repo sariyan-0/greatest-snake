@@ -107,8 +107,6 @@ d_1 = { "Joe": 14, "Dan": 81, "Sara": 8, "Amir": 17}
 ########################################################################
 # Q3: Organize based on the marks
 d_1 = { "Joe": 14, "Dan": 81, "Sara": 8, "Amir": 17}
-
-
 result = {}
 
 for i in range(len(d_1)):
@@ -122,27 +120,25 @@ for i in range(len(d_1)):
     d_1.pop(name)
 
 print(result)
-
-
 ########################################################################
 # Q4: Organize the dictionary based on the name of the students
 d_1 = { "Joe": 14, "Dan": 81, "Sara": 8, "Amir": 17}
 # output: 
 #       A > B > C > D
-
-
 result = {}
+t = len(d_1)
 
-for i in range(len(d_1)):
-    first = None
-    for k in d_1.keys():
-        if first == None or k < first:
-            first = k
-
-    result[first] = d_1[first]
-    d_1.pop(first)
+for i in range(t):
+    mini = "z"
+    for k, v in d_1.items():
+        if k < mini:
+            mini = k
+            marks = v
+    result.update({mini: marks})
+    d_1.pop(mini)
 
 print(result)
+
 
 ########################################################################
 # Q5 : Find the common names in the dictionary
@@ -150,16 +146,20 @@ d_1 = { "Joe": 14, "Dan": 81, "Sara": 8, "Amir": 17}
 d_2 = { "Joe": 54, "Leo": 11, "Sara": 9, "Ellie": 17}
 # output:
 #      {"joe: ???", "Sara:???"}
+common = []
 
+for v in d_1.keys():
+    if v in d_2.keys():
+        if v not in common:
+            common.append(v)
+
+print(common)
 ########################################################################
-# Q6 : Find the common marks in the dictionaryd_1 = { "Joe": 14, "Dan": 81, "Sara": 8, "Amir": 17}
+# Q6 : Find the common marks in the dictionary
 d_1 = { "Joe": 11, "Dan": 81, "Sara": 8, "Amir": 17}
 d_2 = { "Joe": 54, "Leo": 11, "Sara": 9, "Ellie": 17}
 # output:
 #       {????????}
-d_1 = { "Joe": 11, "Dan": 81, "Sara": 8, "Amir": 17}
-d_2 = { "Joe": 54, "Leo": 11, "Sara": 9, "Ellie": 17}
-
 common = []
 
 for v in d_1.values():
@@ -167,4 +167,12 @@ for v in d_1.values():
         if v not in common:
             common.append(v)
 
+print(common)
+# ---------------------------------------------
+common = {}
+
+for k_1, v_1 in d_1.items():
+    for k_2, v_2 in d_1.items():
+        if v_1 == v_2:
+            common.update({v_1: [k_1, k_2]})
 print(common)
