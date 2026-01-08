@@ -176,3 +176,50 @@ for k_1, v_1 in d_1.items():
         if v_1 == v_2:
             common.update({v_1: [k_1, k_2]})
 print(common)
+# ---------------------------------------------
+# Q1: Function of the smallest member of the dictionary
+def find_smallest(d):
+    mini = 1000
+    for v in d.values():
+        if v < mini:
+            mini = v
+    return mini
+
+########################################################################
+# Q2: function to organize gictionary
+def organize_by_marks(d):
+    result = {}
+    for i in range(len(d)):
+        mini = 1000
+        for k, v in d.items():
+            if v < mini:
+                mini = v
+                name = k
+        result[name] = mini
+        d.pop(name)
+    return result
+
+########################################################################
+# Q3: Function to organize the member of a dictionary
+def organize_by_name(d):
+    result = {}
+    t = len(d)
+    for i in range(t):
+        mini = "z"
+        for k, v in d.items():
+            if k < mini:
+                mini = k
+                marks = v
+        result.update({mini: marks})
+        d.pop(mini)
+    return result
+
+########################################################################
+# Q4: function to find the similar items in two dictionary
+def find_common_keys(d_1, d_2):
+    common = []
+    for v in d_1.keys():
+        if v in d_2.keys():
+            if v not in common:
+                common.append(v)
+    return common
